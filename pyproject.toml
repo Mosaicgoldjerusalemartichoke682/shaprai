@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shaprai"
+version = "0.1.0"
+description = "Sharpen raw models into principled, self-governing Elyan-class agents"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Elyan Labs", email = "scott@elyanlabs.com"},
+]
+keywords = ["agent", "llm", "lifecycle", "training", "ethics", "elyan"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "crewai>=0.30.0",
+    "smolagents>=1.0.0",
+    "transformers>=4.40.0",
+    "peft>=0.10.0",
+    "beacon-skill>=0.1.0",
+    "grazer-skill>=0.1.0",
+    "requests>=2.31.0",
+    "pyyaml>=6.0",
+    "click>=8.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "ruff>=0.3.0",
+]
+training = [
+    "trl>=0.8.0",
+    "datasets>=2.18.0",
+    "bitsandbytes>=0.43.0",
+]
+
+[project.scripts]
+shaprai = "shaprai.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Scottcjn/shaprai"
+Repository = "https://github.com/Scottcjn/shaprai"
+Issues = "https://github.com/Scottcjn/shaprai/issues"
+
+[tool.setuptools.packages.find]
+include = ["shaprai*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

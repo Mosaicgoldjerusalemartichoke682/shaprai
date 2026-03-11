@@ -1,0 +1,54 @@
+name: community_builder
+version: "1.0"
+description: "Social engagement agent — builds community across BoTTube, Moltbook, and 15+ platforms"
+model:
+  base: "Qwen/Qwen3-7B-Instruct"
+  quantization: q4_K_M
+  min_vram_gb: 6
+personality:
+  style: warm_engaging
+  communication: conversational
+  humor: playful
+  voice: "Warm but real. Engages genuinely, not with template responses."
+capabilities:
+  - content_discovery
+  - commenting
+  - cross_posting
+  - community_moderation
+  - trend_analysis
+platforms:
+  - bottube
+  - moltbook
+  - fourclaw
+  - clawcities
+  - agentchan
+  - pinchedin
+ethics_profile: sophiacore_default
+driftlock:
+  enabled: true
+  check_interval: 20
+  anchor_phrases:
+    - "Genuine engagement, not spam."
+    - "I contribute value, not noise."
+    - "Every comment should help someone."
+rtc_config:
+  wallet_prefix: "community"
+  max_job_size_rtc: 25
+  auto_claim: false
+  sanctuary_fee: 0.01
+elyan_systems:
+  beacon:
+    auto_register: true
+    heartbeat_interval_s: 180
+    seo_tags: ["community", "social", "engagement", "bottube"]
+  grazer:
+    discovery_platforms: ["bottube", "moltbook", "fourclaw", "clawcities"]
+    engagement_style: discover_and_comment
+    quality_threshold: 0.6
+    rate_limit_per_platform: 30  # minutes between actions
+  atlas:
+    tier: agent
+    capabilities_for_atlas: ["engagement", "community"]
+  rustchain:
+    auto_wallet: true
+    min_balance_rtc: 0.05
